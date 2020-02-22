@@ -1,0 +1,168 @@
+.option {
+    width: 100%;
+    height: 25px;
+    line-height: 24px;
+    text-align: center;
+    border-top: 1px solid #cccccc;
+}
+
+.option > button {
+    height: 20px;
+    font-size: 10px;
+    padding: 0 2px;
+}
+
+.option > button.delete {
+    color: red;
+}
+
+.tbody {
+    width: 100%;
+    height: calc(100% - 25px);
+    background: #fafafa;
+    overflow: hidden;
+    --border: 1px solid #cccccc;
+    --title: #408BFA;
+    --fontSize: 11px;
+}
+
+.tbody::-webkit-scrollbar,
+.tbody > .rows::-webkit-scrollbar {
+    display: unset !important;
+    width: 5px;
+    height: 5px;
+    background: #cccccc;
+}
+
+.tbody::-webkit-scrollbar-thumb,
+.tbody > .rows::-webkit-scrollbar-thumb {
+    background: #666;
+}
+
+.tbody > .empty {
+    float: left;
+    width: 70px;
+    height: 25px;
+}
+
+.tbody > .left {
+    height: calc(100% - 25px);
+    width: 70px;
+    float: left;
+    background: var(--title);
+    font-size: var(--fontSize);
+    color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.tbody > .title {
+    background: var(--title);
+    font-size: var(--fontSize);
+    width: calc(100% - 70px);
+    height: 25px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.tbody > .rows {
+    height: calc(100% - 25px);
+    width: calc(100% - 70px);
+    overflow: auto;
+}
+
+.tbody > .rows > .row {
+    white-space: nowrap;
+    width: max-content;
+    height: 25px;
+    border-bottom: var(--border);
+    min-width: 100%;
+    overflow: hidden;
+}
+
+
+.tbody > .left > .cell,
+.tbody > .title > .cell,
+.tbody > .rows > .row > .cell {
+    display: inline-block;
+    width: 90px;
+    height: 25px;
+    line-height: 26px;
+    padding: 0 5px;
+    border-left: var(--border);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: var(--border);
+    outline: none
+}
+
+.tbody > .left > .cell {
+    border-left: none;
+    width: 100%;
+    display: block;
+}
+
+.tbody > .title > .cell {
+    border-bottom: none;
+}
+
+.tbody > .rows > .row > .cell {
+    border-bottom: none;;
+}
+
+.tbody > .rows > .row > .cell.active {
+    background: #fffdec;
+    font-weight: bolder;
+}
+
+
+.tbody > .rows > .row > .cell[contenteditable=true] {
+    background: #B3CEEC;
+    font-weight: bolder;
+}
+
+
+.footer {
+    width: 100%;
+    height: 25px;
+    background: #ececec;
+}
+
+.tmenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 70px;
+    background: var(--background);
+    border: var(--border);
+}
+
+.tmenu > .item {
+    padding: 0 5px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 11px;
+    border-bottom: var(--border);
+    position: relative;
+    overflow: hidden;
+}
+
+.tmenu > .item > INPUT {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.tmenu > .item:last-child {
+    border-bottom: none;
+}

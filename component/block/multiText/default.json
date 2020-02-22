@@ -1,0 +1,49 @@
+{
+  "title": "多行文本",
+  "size": {
+    "width": 640,
+    "height": 360
+  },
+  "position": {
+    "top": 0,
+    "left": 0
+  },
+  "background": {
+    "color": "",
+    "image": "",
+    "fill": 0
+  },
+  "font": {
+    "color": "#000000",
+    "size": 24,
+    "family": ""
+  },
+  "padding": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "option": [
+    {
+      "type": "textarea",
+      "key": "textarea",
+      "name": "文字",
+      "value": "　　世界上对勇气的最大考验是忍受失败而不丧失信心。\n　　The greatest test of courage on earth is to bear defeat without losing heart."
+    },
+    {
+      "type": "compose",
+      "key": "compose",
+      "value": {
+        "letterSpacing": "",
+        "lineHeight": ""
+      }
+    },
+    {
+      "type": "align",
+      "key": "textAlign",
+      "name": "对齐",
+      "value": "left"
+    }
+  ]
+}

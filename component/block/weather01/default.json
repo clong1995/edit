@@ -1,0 +1,35 @@
+{
+  "title": "天气01",
+  "size": {
+    "width": 400,
+    "height": 200
+  },
+  "position": {
+    "top": 0,
+    "left": 0
+  },
+  "background": {
+    "color": "",
+    "image": "",
+    "fill": 0
+  },
+  "font": {
+    "color": "#000000",
+    "size": 24,
+    "family": ""
+  },
+  "padding": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "option": [
+    {
+      "type": "text",
+      "key": "text",
+      "name": "城市码",
+      "value": "110101"
+    }
+  ]
+}

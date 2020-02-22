@@ -1,0 +1,39 @@
+.wrap {
+    height: 100%;
+    width: 100%;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding: 5px;
+}
+
+.wrap > .inner {
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.wrap > .inner > .content {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px - 50px);
+    margin: 5px;
+    background: var(--background);
+    pointer-events: none;
+}
+
+
+.wrap > .inner > .content > .media {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap > .inner > .title {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    text-align: center;
+}

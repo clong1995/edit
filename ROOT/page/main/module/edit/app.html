@@ -1,0 +1,122 @@
+<div class="title">
+    <div class="tab pageTab active">页面设置</div>
+    <div class="tab componentTab">组件设置</div>
+    <span class="iconfont select">&#xe616;</span>
+</div>
+<div class="content">
+    <div class="item page">
+        <div class="row name">
+            <div class="name">页面名</div>
+            <input class="value input name-value" type="text" value="">
+        </div>
+        <div class="row size">
+            <div class="name">宽度</div>
+            <input class="value input width-value" type="number" value="">
+            <div class="name">高度</div>
+            <input class="value input height-value" type="number" value="">
+        </div>
+        <div class="row backgroundColor">
+            <div class="name">背景色</div>
+            <input type="checkbox" class="value input background-color-check-value"/>
+            <input type="color" class="value input background-color-value" value=""/><input
+                type="text"
+                class="value input background-color-text-value"
+                value=""/>
+        </div>
+        <div class="row image">
+            <div class="name">背景图</div>
+            <input type="checkbox" class="value input background-image-check-value"><select
+                class="value input background-image-fill-value">
+            <option selected value="0">等比</option>
+            <option value="1">填充</option>
+        </select><input type="file" class="value input background-image-value" value="">
+        </div>
+        <div class="row flip-over disable">
+            <div class="name">翻页</div>
+            <select class="value input flip-over-value">
+                <option selected>无动效</option>
+                <option>飞入</option>
+                <option>旋转</option>
+                <option>淡入</option>
+            </select>
+        </div>
+        <div class="row fill disable">
+            <div class="name">填充</div>
+            <select class="value input fill-value">
+                <option selected value="0">完全填充</option>
+                <option value="1">等比拉伸</option>
+            </select>
+        </div>
+        <div class="row cover">
+            <div class="name">封面</div>
+            <div class="image value cover-value centerWrap centerBg">
+                <i class="iconfont">&#xe64a;</i>
+            </div>
+        </div>
+        <div class="row comment disable">
+            <div class="name">备注</div>
+            <textarea class="value input comment-value"></textarea>
+        </div>
+        <div class="row saveTemplate">
+            <div class="name"></div>
+            <button class="button value saveTemplate-btn">另存为模板</button>
+        </div>
+        <div class="row delete">
+            <div class="name"></div>
+            <button class="button value delete-btn">删除</button>
+        </div>
+    </div>
+    <div class="item component hide">
+        <div class="info centerWrap">请选中一个组件</div>
+    </div>
+    <!--
+    <div class="row x1">
+        <div class="name">播放</div>
+        <select class="value input">
+            <option selected>静止</option>
+            <option>初次加载</option>
+            <option>轮播</option>
+        </select>
+    </div>
+    <button class="button">按钮</button>
+    <button class="button">自动对齐</button>
+    <button class="button">缩放</button>
+    -->
+</div>
+
+
+<!-- 动态数据弹窗 -->
+<div class="real-data-window hide">
+    <div class="window-container">
+        <div class="window-title">设置动态数据</div>
+        <div class="body">
+            使用说明: <span class="info">http协议，get方法，通用header，200响应，json结果，服务端跨域</span><br><br>
+            请求接口: <input class="api input" type="text" placeholder="http://xxxx"><br>
+            更新频率: <select class="rate input">
+            <option selected value="0">启动时仅请求一次</option>
+            <optgroup label="秒级自动更新">
+                <option value="5">每 5 秒</option>
+                <option value="30">每 30 秒</option>
+                <option value="60">每 60 秒</option>
+            </optgroup>
+            <optgroup label="分钟级自动更新">
+                <option value="300">每 5 分钟</option>
+                <option value="600">每 10 分钟</option>
+                <option value="1800">每 30 分钟</option>
+                <option value="3600">每 60 分钟</option>
+            </optgroup>
+            <optgroup label="小时级自动更新">
+                <option value="7200">每 2 小时</option>
+                <option value="1440">每 4 小时</option>
+                <option value="2880">每 8 小时</option>
+            </optgroup>
+        </select>　
+            <input checked type="checkbox"> 数据异常,启用静态数据<br>
+            请求参数: <textarea class="param input" placeholder="raw的json结构，可选填"></textarea><br>
+            数据样例: <textarea class="example input" disabled readonly></textarea><br>
+            测试结果: <textarea class="test-result input" disabled readonly></textarea><br>
+            <button class="test button">测试</button>
+            <button class="confirm button">确定</button>
+        </div>
+    </div>
+</div>

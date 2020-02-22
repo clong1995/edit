@@ -1,0 +1,41 @@
+{
+  "title": "图片背景",
+  "size": {
+    "width": 640,
+    "height": 360
+  },
+  "position": {
+    "top": 0,
+    "left": 0
+  },
+  "option": [
+    {
+      "type": "textarea",
+      "key": "url",
+      "name": "链接",
+      "value": ""
+    },
+    {
+      "type": "radio",
+      "key": "fill",
+      "name": "填充",
+      "value": "contain",
+      "option": [
+        {
+          "name": "等比",
+          "value": "contain"
+        },
+        {
+          "name": "拉伸",
+          "value": "fill"
+        }
+      ]
+    },
+    {
+      "name": "透明度",
+      "value": "50",
+      "key": "distance",
+      "type": "range"
+    }
+  ]
+}

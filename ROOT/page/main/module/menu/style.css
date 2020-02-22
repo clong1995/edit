@@ -1,0 +1,219 @@
+.chip {
+    width: 100%;
+    height: 30px;
+}
+
+.chip > .item {
+    float: left;
+    margin: 0 20px;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    width: 80px;
+}
+
+.chip > .item:after {
+    content: "|";
+    position: absolute;
+    right: -20px;
+}
+
+.chip > .item:last-child:after {
+    content: unset;
+}
+
+.chip > .item > .icon,
+.chip > .item > .title {
+    display: block;
+    float: left;
+    height: 30px;
+}
+
+.chip > .item > .icon {
+    font-size: 18px;
+    margin-right: 3px;
+}
+
+.chip > .item > .wrap {
+    position: absolute;
+    top: 30px;
+    left: -21px;
+    z-index: 3;
+    display: none;
+    border: var(--border);
+    border-top: none;
+    background: #dfdfdf;
+    overflow: hidden;
+    cursor: default;
+    /*resize: both;*/
+}
+
+.chip > .item:focus > .wrap {
+    display: block;
+}
+
+.chip > .item > .wrap > .classify {
+    width: 120px;
+    height: 100%;
+    float: left;
+    background: var(--background);
+    border-right: var(--border);
+    /*overflow-y: auto;
+    overflow-x: hidden;*/
+}
+
+/*
+.chip > .item > .wrap > .classify::-webkit-scrollbar {
+    display: unset !important;
+    width: 5px;
+    height: 5px;
+    background: none;
+}
+
+.chip > .item > .wrap > .classify::-webkit-scrollbar-thumb {
+    background: #666;
+}
+*/
+
+.chip > .item > .wrap > .classify > .sort {
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+    border-bottom: var(--border);
+}
+
+.chip > .item > .wrap > .classify > .sort.active {
+    background: #dfdfdf;
+    width: 121px;
+    font-weight: bold;
+}
+
+.chip > .item > .wrap > .classify > .sort > .icon {
+    font-size: 15px;
+    margin-right: 5px;
+    float: left;
+}
+
+.chip > .item > .wrap > .classify > .sort > .name {
+    float: left;
+    font-size: 11px;
+}
+
+.chip > .item > .wrap > .content {
+    width: calc(100% - 120px);
+    height: calc(100% - 20px);
+    float: left;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.chip > .item > .wrap > .content > .ul {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.chip > .item > .wrap > .content > .ul.active {
+    display: block;
+}
+
+.chip > .item > .wrap > .content > .ul > .li {
+    width: 112px;
+    height: 85px;
+    float: left;
+    margin: 0 0 10px 10px;
+    border: var(--border);
+    background: var(--background);
+    cursor: pointer;
+}
+
+.chip > .item > .wrap > .content > .ul > .li:hover {
+    border-color: #b5b5b5;
+    background: #d0d0d0;
+}
+
+.chip > .item > .wrap > .content > .ul > .li > .thumbnail {
+    width: 102px;
+    height: 57px;
+    line-height: 50px;
+    text-align: center;
+    margin: 3px auto 0 auto;
+    background: var(--background2);
+}
+
+.chip > .item > .wrap > .content > .ul > .li > .thumbnail > .icon {
+    margin: 0 5px;
+    opacity: 0;
+}
+
+.chip > .item > .wrap > .content > .ul > .li > .thumbnail:hover > .icon {
+    opacity: 1;
+}
+
+.chip > .item > .wrap > .content > .ul > .li > .title {
+    width: 100%;
+    height: 23px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 11px;
+}
+
+.chip > .item.decorate > .wrap > .search {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.chip > .item.decorate > .wrap > .select {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.chip > .item.decorate > .wrap > .select > .select-item {
+    padding:2px 5px;
+    border: var(--border);
+    line-height: 50px;
+    background: var(--background2);
+    cursor: pointer;
+}
+.chip > .item.decorate > .wrap > .select > .select-item.active {
+    border-color: var(--color);
+    font-weight: bolder;
+}
+
+.chip > .item.decorate > .wrap > .result {
+    width: 100%;
+    height: calc(100% - 80px);
+    margin-top: 0;
+}
+
+.chip > .item.decorate > .wrap > .result > .ul {
+    display: block;
+}
+
+.chip > .item.decorate > .wrap > .result > .item {
+
+}
+
+.chip > .item.decorate > .wrap > .pages {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.chip > .item.decorate > .wrap > .pages > .page {
+    padding: 0 2px;
+    margin: 0 2px;
+    border-bottom: var(--border);
+    cursor: pointer;
+}
+
+.chip > .item.decorate > .wrap > .pages > .page.active {
+    background: var(--background5);
+    color: var(--color2);
+    cursor: default;
+}

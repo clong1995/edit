@@ -1,0 +1,64 @@
+{
+  "title": "基础地图",
+  "size": {
+    "width": 640,
+    "height": 360
+  },
+  "position": {
+    "top": 0,
+    "left": 0
+  },
+  "background": {
+    "color": "",
+    "image": "",
+    "fill": 0
+  },
+  "font": {
+    "color": "#000000",
+    "size": 24,
+    "family": ""
+  },
+  "padding": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "data": [
+    ["","值"],
+    ["北京",10],
+    ["山东",20],
+    ["四川",30],
+    ["黑龙江",40],
+    ["山西",50],
+    ["台湾",60]
+  ],
+  "realData": {
+    "api": "",
+    "param":{},
+    "rate": 60,
+    "body": "[\n    [\"\",\"值\"],\n    [\"北京\",10],\n    [\"山东\",20],\n    [\"四川\",30],\n    [\"黑龙江\",40],\n    [\"山西\",50],\n    [\"台湾\",60]\n  ]"
+  },
+  "option": [
+    {
+      "type": "select",
+      "name": "VI色",
+      "key": "VIColor",
+      "value": "default",
+      "option": [
+        {
+          "name": "默认色",
+          "value" : "default"
+        },
+        {
+          "name": "方案1",
+          "value" : "VI1"
+        },
+        {
+          "name": "方案2",
+          "value" : "VI2"
+        }
+      ]
+    }
+  ]
+}

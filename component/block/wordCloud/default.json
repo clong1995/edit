@@ -1,0 +1,49 @@
+{
+  "title": "基础词云",
+  "size": {
+    "width": 640,
+    "height": 360
+  },
+  "position": {
+    "top": 0,
+    "left": 0
+  },
+  "background": {
+    "color": "",
+    "image": "",
+    "fill": 0
+  },
+  "font": {
+    "color": "#000000",
+    "size": 24,
+    "family": ""
+  },
+  "padding": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "data": [
+    ["","文字", "大小", "颜色"],
+    [1,"北京祝融科技", 10, "auto"],
+    [1,"华为5G", 9, "auto"],
+    [1,"国庆节7天假", 8, "auto"],
+    [1,"苹果发布会", 7, "auto"],
+    [1,"数据可视化", 6, "auto"],
+    [1,"多喝热水", 5, "auto"],
+    [1,"单身狗", 4, "auto"],
+    [1,"hello world", 3, "auto"],
+    [1,"你好 世界", 2, "auto"],
+    [1,"IXD", 1, "auto"],
+    [1,"快展", 1, "auto"]
+  ],
+  "option": [
+    {
+      "type": "number",
+      "key": "number",
+      "name": "缩放",
+      "value": 5
+    }
+  ]
+}

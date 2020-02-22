@@ -1,0 +1,36 @@
+.user {
+    position: relative;
+    line-height: 40px;
+    text-align: center;
+    outline: none;
+}
+
+.user:focus > .menu {
+    display: block;
+}
+
+.user > .icon {
+    font-size: 18px;
+}
+
+.user > .menu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    border: var(--border);
+    background: var(--background2);
+}
+
+.user > .menu > .item {
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-bottom: var(--border);
+}
+
+.user > .menu > .item:hover {
+    background: var(--background);
+}

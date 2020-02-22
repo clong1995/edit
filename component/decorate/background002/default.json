@@ -1,0 +1,55 @@
+{
+  "title": "渐变背景",
+  "size": {
+    "width": 640,
+    "height": 360
+  },
+  "position": {
+    "top": 0,
+    "left": 0
+  },
+  "option": [
+    {
+      "name": "方向",
+      "value": "90deg",
+      "key": "direction",
+      "type": "select",
+      "option": [
+        {
+          "name": "→ 从左到右",
+          "value": "90deg"
+        },
+        {
+          "name": "↓ 从上到下",
+          "value": "180deg"
+        },
+        {
+          "name": "↘ 从左上到右下",
+          "value": "135deg"
+        },
+        {
+          "name": "↙ 从右上到左下",
+          "value": "225deg"
+        }
+      ]
+    },
+    {
+      "name": "距离",
+      "value": "50",
+      "key": "distance",
+      "type": "range"
+    },
+    {
+      "name": "起始色",
+      "value": "#C13530",
+      "key": "startColor",
+      "type": "color"
+    },
+    {
+      "name": "结束色",
+      "value": "#D38264",
+      "key": "endColor",
+      "type": "color"
+    }
+  ]
+}

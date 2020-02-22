@@ -1,0 +1,71 @@
+{
+  "title": "简介02",
+  "size": {
+    "width": 535,
+    "height": 520
+  },
+  "position": {
+    "top": 0,
+    "left": 0
+  },
+  "background": {
+    "color": "",
+    "image": "",
+    "fill": 0
+  },
+  "font": {
+    "color": "#64BCBD",
+    "size": 20,
+    "family": ""
+  },
+  "padding": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "option": [
+    {
+      "type": "color",
+      "key": "color",
+      "name": "底色",
+      "value": "#2F4554"
+    },
+    {
+      "type": "color",
+      "key": "border",
+      "name": "边线",
+      "value": "#376462"
+    },
+    {
+      "type": "file",
+      "key": "file",
+      "name": "文件",
+      "value": ""
+    },
+    {
+      "type": "text",
+      "key": "text1",
+      "name": "大标题",
+      "value": "妥协和迁就就是万恶之源。"
+    },
+    {
+      "type": "text",
+      "key": "text2",
+      "name": "小标题1",
+      "value": "妥协和迁就就是万恶之源。"
+    },
+    {
+      "type": "text",
+      "key": "text3",
+      "name": "小标题2",
+      "value": "妥协和迁就就是万恶之源。"
+    },
+    {
+      "type": "textarea",
+      "key": "textarea",
+      "name": "文字",
+      "value": "　　你的时间有限，所以不要为别人而活。\n　　不要被教条所限，不要活在别人的观念里。不要让别人的意见左右自己内心的声音。\n　　最重要到是，勇敢的去追随自己的心灵和直觉，只有自己的心灵和直觉才知道你自己的真实想法，其他一切都是次要。"
+    }
+  ]
+}

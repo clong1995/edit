@@ -1,0 +1,23 @@
+#operation {
+    width: calc(100% - 100px);
+    height: 40px;
+    float: left;
+}
+
+.leftBox {
+    width: 100%;
+    height: calc(100% - 45px - 20px);
+    float: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#list {
+
+}
+
+#userCenter{
+    width: 100px;
+    height: 40px;
+    float: left;
+}

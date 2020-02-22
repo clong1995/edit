@@ -1,0 +1,30 @@
+{
+  "title": "静态图片",
+  "size": {
+    "width": 640,
+    "height": 360
+  },
+  "position": {
+    "top": 0,
+    "left": 0
+  },
+  "background": {
+    "color": "#ff0000",
+    "image": "xxxx.png"
+  },
+  "data": [
+    {
+      "type": "xxx",
+      "key": "xxx",
+      "name": "xxx",
+      "value": "xxxx"
+    },
+    {
+      "type": "xxx",
+      "key": "xxx",
+      "name": "xxx",
+      "value": "xxxx.png",
+      "constraint": "xxx"
+    }
+  ]
+}

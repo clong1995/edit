@@ -1,0 +1,159 @@
+/*默认色*/
+/*苹果灰*/
+:root {
+    --border: 1px solid #cecece;
+    --background: #ececec;
+    --background2: #fafafa;
+    --background3: #408BFA;
+    --background4: #cecece;
+    --background5: #cecece;
+    --background6: lime;
+    --background7: none;
+    --background8: rgba(206, 206, 206, 0.45);
+    --background9: orange;
+    --color: #000000;
+    --color1: #000000;
+    --color2: #666;
+    --color3: #333;
+    --color4: #FFFAE3;
+    --color5: #408BFA;
+    --color6: #cecece;
+}
+
+/*科技绿*/
+/*:root {
+    --border: 1px solid #66BCBD;
+    --background: #182627;
+    --background2: #1f3d42;
+    --background3: #EE9F3A;
+    --background4: rgb(16, 27, 32);
+    --background5: #001718;
+    --background6: lime;
+    --background7: #cccccc;
+    --background8: rgba(206, 206, 206, 0.45);
+    --background9: orange;
+    --color: #66BCBD;
+    --color1: #ffffff;
+    --color3: #333;
+    --color4: #FFFAE3;
+    --color5: #408BFA;
+    --color6: #cecece;
+}*/
+
+body {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    font-size: 13px;
+    background: var(--background);
+    color: var(--color);
+    min-width: 1050px;
+    min-height: 656px;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /*src: url('../iconfont/iconfont.woff2');*/
+    src: url('//at.alicdn.com/t/font_722315_2hj8cjunlco.woff2');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input, select {
+    color: var(--color)
+}
+
+.input {
+    width: 120px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 11px;
+    border: var(--border);
+    background: var(--background2);
+    border-radius: 2px;
+}
+
+.input:focus {
+    background: #ffffff;
+    font-weight: bold;
+    border: 1px solid #bfbfbf;
+}
+
+.button {
+    font-size: 11px;
+    border: var(--border);
+    background: var(--background2);
+    height: 22px;
+    padding: 0 5px;
+    line-height: 20px;
+    cursor: pointer;
+    color: var(--color);
+    border-radius: 2px;
+}
+
+.button:active {
+    background: var(--background);
+    font-weight: bold;
+    border: 1px solid var(--color2);
+}
+
+/*滚动条整体部分*/
+.scrollbar {
+}
+
+/*滚动条整体部分*/
+.scrollbar::-webkit-scrollbar {
+    position: absolute;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+}
+
+/*滚动条两端的按钮*/
+.scrollbar::-webkit-scrollbar-button {
+
+}
+
+/*外层轨道*/
+.scrollbar::-webkit-scrollbar-track {
+
+}
+
+/*内层轨道，滚动条中间部分（除去）*/
+.scrollbar::-webkit-scrollbar-track-piece {
+
+}
+
+/*滚动条里面可以拖动的那个*/
+.scrollbar::-webkit-scrollbar-thumb {
+
+}
+
+/*边角*/
+.scrollbar::-webkit-scrollbar-corner {
+    background: none;
+}
+
+/*定义右下角拖动块的样式*/
+.scrollbar::-webkit-resizer {
+
+}
+
+.animation_rotate {
+    animation: rotate 5s linear infinite
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}

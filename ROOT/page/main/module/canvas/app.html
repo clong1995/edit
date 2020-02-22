@@ -1,0 +1,82 @@
+<!--
+    说明
+        层级：组件层偏移量 10
+        背景：1
+        拼缝线：999
+        网格：998
+        标尺：跳出三界外，不在五行中 2
+        右键菜单：3
+
+-->
+<!-- 坐标轴 -->
+<div class="axis-O"></div>
+<div class="axis-X"></div>
+<div class="axis-Y"></div>
+
+<!-- 标尺 -->
+<div class="line-X axis-line hide"></div>
+<div class="line-Y axis-line hide"></div>
+
+<!-- sheet -->
+<div class="sheet">
+    <div class="add-sheet">✚</div>
+    <div class="left">&lt;</div>
+    <div class="inner"></div>
+    <div class="right">&gt;</div>
+</div>
+
+<!-- 底部工具条 -->
+<div class="tool-bar">
+    <div class="overview-box tool-box">
+        <input class="checkbox input" type="checkbox">
+        <span class="title">鹰眼</span>
+        <div class="view hide">
+            <div class="inner"></div>
+            <div class="glass hide" style="width: 30px;height: 30px;top:20px;left: 20px;"></div>
+        </div>
+    </div>
+    <div class="range-box tool-box">
+        <input class="checkbox input" type="checkbox">
+        <span class="title">缩放</span>
+        <input class="number input disable" type="number" value="1" min="1" max="100"/>
+        <input class="range disable" type="range" value="1" min="1" max="100"/>
+    </div>
+    <div class="axis-box tool-box">
+        <input class="checkbox input" type="checkbox">
+        <span class="title">标尺线</span>
+    </div>
+    <div class="rift-box tool-box">
+        <input class="checkbox input" type="checkbox">
+        <span class="title">拼缝线</span>
+        <input class="number input disable" type="number" value="0" min="0" max="10"/>
+        <span class="symbol">*</span>
+        <input class="number input disable" type="number" value="0" min="0" max="10"/>
+    </div>
+    <div class="grid-box tool-box">
+        <input class="checkbox input" type="checkbox">
+        <span class="title">网格线</span>
+    </div>
+    <div class="screen-box tool-box">
+        <span class="title">效果</span>
+        <select class="select input">
+            <option selected>无</option>
+            <option>液晶显示器</option>
+            <option>LED显示器</option>
+            <option>投影</option>
+            <option>灯箱</option>
+        </select>
+    </div>
+</div>
+
+<!-- 画布 -->
+<div class="container"></div>
+<!-- 右键菜单 -->
+<div class="right-menu hide" tabindex="-1">
+    <div class="li move-up">上移一层</div>
+    <div class="li move-down">下移一层</div>
+    <!--
+    <div class="li move-top">置顶</div>
+    <div class="li move-bottom">置底</div>
+    -->
+    <div class="li delete">删除</div>
+</div>

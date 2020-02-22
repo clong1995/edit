@@ -1,0 +1,418 @@
+.axis-O {
+    line-height: 13px;
+    text-align: center;
+    height: 15px;
+    width: 15px;
+    float: left;
+    background-color: var(--background);
+    z-index: 2;
+    position: relative;
+}
+
+.axis-X, .axis-Y {
+    background-color: var(--background);
+    float: left;
+    z-index: 2;
+    position: relative;
+}
+
+.axis-X {
+    width: calc(100% - 15px);
+    height: 15px;
+    border-bottom: var(--border);
+    background-image: url("image/line-X.png");
+    background-repeat: repeat-x;
+}
+
+.axis-Y {
+    width: 15px;
+    height: calc(100% - 15px - 20px);
+    border-right: var(--border);
+    background-image: url("image/line-Y.png");
+    background-repeat: repeat-y;
+}
+
+.line-X, .line-Y {
+    position: absolute;
+    z-index: 2;
+}
+
+.line-X {
+    border-top: 1px solid var(--background6);
+    top: 50%;
+    left: 0;
+    width: 100%;
+    cursor: ns-resize;
+    height: 5px;
+}
+
+.line-Y {
+    border-right: 1px solid var(--background6);
+    top: 0;
+    left: 50%;
+    height: calc(100% - 20px);
+    cursor: ew-resize;
+    width: 5px;
+}
+
+.sheet {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    border-top: var(--border);
+    background-color: var(--background);
+    z-index: 2;
+    font-size: 11px;
+    padding-left: 14px;
+}
+
+.sheet > .add-sheet {
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    border-right: var(--border);
+    border-left: var(--border);
+    cursor: pointer;
+    float: left;
+}
+
+.sheet > .left,
+.sheet > .right {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-right: var(--border);
+    cursor: pointer;
+    float: left;
+}
+
+.sheet > .right {
+    border: none;
+    border-left: var(--border);
+}
+
+.sheet > .inner {
+    float: left;
+    width: calc(100% - 40px - 20px - 20px);
+}
+
+.sheet > .inner > .item {
+    float: left;
+    width: 100px;
+    height: 20px;
+    padding: 0 5px;
+    border-right: var(--border);
+    opacity: .7;
+    text-align: center;
+    cursor: pointer
+}
+
+.sheet > .inner > .item.active {
+    opacity: 1;
+    font-weight: bold;
+    height: 21px;
+    margin-top: -1px;
+    background-color: var(--background);
+    cursor: default;
+}
+
+.tool-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    border-top: var(--border);
+    background-color: var(--background);
+    z-index: 2;
+}
+
+
+.tool-bar .checkbox {
+    margin-top: 3px;
+    float: left;
+    margin-right: 5px;
+}
+
+.tool-bar > .tool-box {
+    float: right;
+    width: 275px;
+    height: 19px;
+    padding: 1px 0;
+    margin-left: 10px;
+}
+
+.tool-bar > .tool-box:after {
+    content: "|";
+    float: right;
+    font-size: 10px;
+}
+
+.tool-bar > .tool-box > .title {
+    float: left;
+    line-height: 18px;
+    margin-right: 5px;
+    font-size: 11px;
+}
+
+.tool-bar > .range-box {
+    width: 210px;
+    height: 17px;
+    line-height: 17px;
+}
+
+.tool-bar > .range-box > .number {
+    height: 17px;
+    line-height: 17px;
+    width: 30px;
+    text-align: center;
+}
+
+.tool-bar > .range-box > .range {
+    height: 7px;
+    width: 120px;
+}
+
+
+.tool-bar > .range-box > .checkbox {
+    height: 12px;
+    width: 12px;
+}
+
+.tool-bar > .axis-box {
+    width: 62px;
+    height: 17px;
+    line-height: 17px;
+}
+
+.tool-bar > .axis-box > .checkbox {
+    height: 12px;
+    width: 12px;
+}
+
+.tool-bar > .rift-box {
+    width: 140px;
+    height: 17px;
+    line-height: 17px;
+}
+
+.tool-bar > .rift-box > .checkbox {
+    height: 12px;
+    width: 12px;
+}
+
+.tool-bar > .rift-box > .number {
+    height: 17px;
+    line-height: 17px;
+    width: 30px;
+    text-align: center;
+}
+
+
+.tool-bar > .rift-box > .symbol {
+    line-height: 18px;
+    font-size: 11px;
+}
+
+
+.tool-bar > .grid-box {
+    width: 60px;
+    height: 17px;
+    line-height: 17px;
+}
+
+.tool-bar > .grid-box > .checkbox {
+    height: 12px;
+    width: 12px;
+}
+
+.tool-bar > .screen-box {
+    width: 115px;
+    height: 17px;
+    line-height: 17px;
+    margin-left: unset;
+}
+
+.tool-bar > .screen-box > .select {
+    height: 17px;
+    line-height: 15px;
+    width: 75px;
+    float: left;
+    font-size: 10px;
+}
+
+
+/*鹰眼*/
+.tool-bar > .overview-box {
+    width: 50px;
+    height: 17px;
+    line-height: 17px;
+    position: relative;
+}
+
+.tool-bar > .overview-box:after {
+    content: "";
+}
+
+.tool-bar > .overview-box > .checkbox {
+    height: 12px;
+    width: 12px;
+}
+
+.tool-bar > .overview-box > .view {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: var(--border);
+    background: var(--background);
+    top: -155px;
+    left: -105px;
+}
+
+.tool-bar > .overview-box > .view > .inner {
+    background: var(--background5);
+    position: absolute;
+}
+
+
+.tool-bar > .overview-box > .view > .glass {
+    border: 1px solid rgba(0, 0, 255, 0.25);
+    background-color: rgba(0, 0, 255, 0.05);;
+    position: absolute;
+}
+
+.container {
+    position: relative;
+    overflow: auto;
+    width: calc(100% - 15px);
+    height: calc(100% - 15px - 20px - 20px);
+    box-sizing: border-box;
+}
+
+/*
+.container::-webkit-scrollbar {
+    display: unset !important;
+    width: 5px;
+    height: 5px;
+    background: #cccccc;
+}
+*/
+
+
+/*外层轨道*/
+/*
+.container::-webkit-scrollbar {
+    background: none;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #666;
+}
+
+.container::-webkit-scrollbar-corner {
+    background: none;
+}
+*/
+
+.container > .scene {
+    background-image: url("image/bg.png");
+    background-repeat: repeat;
+    position: absolute;
+    border: var(--border);
+    z-index: 1;
+    box-sizing: content-box;
+    background-color: var(--background7);
+}
+
+.container > .scene > .grid {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background-image: url("image/grid.png");
+    background-repeat: repeat;
+    pointer-events: none;
+}
+
+.container > .scene > .row,
+.container > .scene > .column {
+    position: absolute;
+}
+
+
+.container > .scene > .row {
+    background-color: var(--color1);
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.container > .scene > .column {
+    background-color: var(--color1);
+    top: 0;
+    height: 100%;
+    z-index: 999;
+    pointer-events: none;
+}
+
+
+.container > .scene > .slice {
+    position: absolute;
+    z-index: 2;
+    outline: none;
+    /*overflow: hidden;*/
+}
+
+.container > .scene > .slice:hover,
+.container > .scene > .slice.active {
+    border: 1px solid rgba(0, 0, 255, 0.25);
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+.container > .scene > .slice > * {
+    pointer-events: none;
+}
+
+.container > .scene > .sceneBg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.right-menu {
+    outline: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    overflow: hidden;
+    width: 70px;
+    height: auto;
+    background-color: var(--background);
+    border: var(--border);
+    border-bottom: none;
+    font-size: 11px;
+}
+
+.right-menu > .li {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: var(--border);
+    padding: 0 5px;
+}
+
+.right-menu > .li:hover {
+    background-color: var(--background5);
+    font-weight: bolder;
+}

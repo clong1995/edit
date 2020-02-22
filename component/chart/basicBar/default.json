@@ -1,0 +1,122 @@
+{
+  "title": "基础柱状图",
+  "size": {
+    "width": 640,
+    "height": 360
+  },
+  "position": {
+    "top": 0,
+    "left": 0
+  },
+  "background": {
+    "color": "",
+    "image": "",
+    "fill": 0
+  },
+  "font": {
+    "color": "#000000",
+    "size": 24,
+    "family": ""
+  },
+  "padding": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "data": [
+    ["","衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"],
+    ["销量",5, 20, 36, 10, 10, 20]
+  ],
+  "realData": {
+    "api": "",
+    "param":{},
+    "rate": 60,
+    "body": "[\n    [\"\",\"衬衫\", \"羊毛衫\", \"雪纺衫\", \"裤子\", \"高跟鞋\", \"袜子\"],\n    [\"销量\",5, 20, 36, 10, 10, 20]\n  ]"
+  },
+  "option": [
+    {
+      "type": "select",
+      "name": "图例",
+      "key": "legendPosition",
+      "value": "top",
+      "option": [
+        {
+          "name": "居上",
+          "value" : "top"
+        },
+        {
+          "name": "居右",
+          "value" : "right"
+        },
+        {
+          "name": "居下",
+          "value" : "bottom"
+        },
+        {
+          "name": "居左",
+          "value" : "left"
+        }
+      ]
+    },{
+      "name": "图例",
+      "value": "show",
+      "key": "legendDisplay",
+      "type": "radio",
+      "option": [
+        {
+          "name": "显示",
+          "value": "show"
+        },
+        {
+          "name": "隐藏",
+          "value": "hide"
+        }
+      ]
+    },{
+      "name": "坐标轴",
+      "value": "#000000",
+      "key": "axisColor",
+      "type": "color"
+    },{
+      "name": "坐标字",
+      "value": "#000000",
+      "key": "axisLabelColor",
+      "type": "color"
+    },{
+      "name": "x网格",
+      "value": "#000000",
+      "key": "xSplitLineColor",
+      "type": "color"
+    },{
+      "name": "y网格",
+      "value": "#000000",
+      "key": "ySplitLineColor",
+      "type": "color"
+    },{
+      "name": "图例字",
+      "value": "#000000",
+      "key": "legendColor",
+      "type": "color"
+    },{
+      "type": "select",
+      "name": "VI色",
+      "key": "VIColor",
+      "value": "default",
+      "option": [
+        {
+          "name": "默认色",
+          "value" : "default"
+        },
+        {
+          "name": "方案1",
+          "value" : "VI1"
+        },
+        {
+          "name": "方案2",
+          "value" : "VI2"
+        }
+      ]
+    }
+  ]
+}

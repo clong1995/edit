@@ -1,0 +1,65 @@
+{
+  "title": "线框",
+  "size": {
+    "width": 640,
+    "height": 360
+  },
+  "position": {
+    "top": 0,
+    "left": 0
+  },
+  "option": [
+    {
+      "name": "样式",
+      "value": "solid",
+      "key": "style",
+      "type": "select",
+      "option": [
+        {
+          "name": "实线",
+          "value": "solid"
+        },
+        {
+          "name": "虚线",
+          "value": "dashed"
+        },
+        {
+          "name": "点线",
+          "value": "dotted"
+        },
+        {
+          "name": "双线",
+          "value": "double"
+        },
+        {
+          "name": "3D沟槽",
+          "value": "groove"
+        },
+        {
+          "name": "3D脊",
+          "value": "ridge"
+        },
+        {
+          "name": "3D嵌入",
+          "value": "inset"
+        },
+        {
+          "name": "3D突出",
+          "value": "outset"
+        }
+      ]
+    },
+    {
+      "name": "颜色",
+      "value": "#000000",
+      "key": "color",
+      "type": "color"
+    },
+    {
+      "name": "粗细",
+      "value": "2",
+      "key": "weight",
+      "type": "number"
+    }
+  ]
+}

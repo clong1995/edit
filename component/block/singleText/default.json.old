@@ -1,0 +1,43 @@
+{
+  "title": "单行文本",
+  "size": {
+    "width": 400,
+    "height": 50
+  },
+  "position": {
+    "top": 0,
+    "left": 0
+  },
+  "background": {
+    "color": "",
+    "image": "xxxx.jpg"
+  },
+  "font": {
+    "color": "#000000",
+    "size": 24,
+    "family": ""
+  },
+  "data": [
+    {
+      "type": "text",
+      "key": "text",
+      "name": "文字",
+      "value": "请输入单行文字"
+    },
+    {
+      "type": "font",
+      "key": "font",
+      "value": {
+        "color": "#cccccc",
+        "size": 24,
+        "family": ""
+      }
+    },
+    {
+      "type": "align",
+      "key": "text-align",
+      "name": "对齐",
+      "value": "center"
+    }
+  ]
+}

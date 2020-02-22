@@ -1,0 +1,55 @@
+.logo {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.logo > .logoImg {
+    float: left;
+    /*background-image: url("/resource/image/logo.png");*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /*width: 26px;*/
+    width: 0;
+    height: 26px;
+    margin: 10px 12px;
+}
+
+.logo > .title {
+    text-align: center;
+    float: left;
+    width: calc(100% - 58px);
+    height: 50px;
+    line-height: 48px;
+    font-size: 15px;
+    border-bottom: var(--border);
+}
+
+.list {
+    width: 100%;
+    height: calc(100% - 60px);
+}
+
+.list > .item {
+    width: 100%;
+    height: 50px;
+    line-height: 48px;
+    padding: 0 15px;
+}
+
+.list > .item > .title {
+    cursor: pointer;
+}
+
+.list > .item > .title > .icon {
+    font-size: 17px;
+    margin-right: 5px;
+}
+
+.list > .item.active {
+    width: calc(100% + 1px);
+    background: var(--background);
+    font-weight: bold;
+    border: var(--border);
+    border-right: none;
+}

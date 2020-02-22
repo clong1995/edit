@@ -1,0 +1,118 @@
+.display {
+    height: 40px;
+    line-height: 40px;
+    float: right;
+    width: 75px;
+    text-align: center;
+}
+
+.display > .icon {
+    font-size: 18px;
+    padding: 0 4px;
+}
+
+.display > .icon:after {
+    width: 25px;
+    bottom: -16px;
+}
+
+.display > .pic:after {
+    content: "概览";
+}
+
+.display > .list:after {
+    content: "列表";
+}
+
+.search {
+    width: 143px;
+    height: 40px;
+    padding: 9px 0;
+    float: right;
+}
+
+.sort {
+    width: 100px;
+    float: right;
+    background: var(--background2);
+    overflow: hidden;
+    margin: 9px 10px 9px 0;
+    height: 22px;
+    border: var(--border);
+    border-radius: 2px;
+}
+
+.sort > .icon,
+.search > .icon {
+    background: var(--background2);
+    float: left;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    border: var(--border);
+    border-right: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.sort > .value,
+.search > .value {
+    float: left;
+    border-left: unset;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+}
+
+.sort > .icon {
+    border: none;
+}
+
+.sort > .value {
+    border: none;
+    height: 20px;
+    line-height: 20px;
+    width: 75px;
+}
+
+.built {
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    width: 200px;
+    padding-left: 10px;
+}
+
+.built > .button {
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+.built > .button.project {
+    background: var(--background3);
+    border: 1px solid var(--background3);
+    color: #ffffff;
+}
+
+.add-project{
+    background: var(--background8);
+}
+.add-project > .window-container {
+    width: 300px;
+    height: 100px;
+}
+
+.add-project .body {
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+}
+.add-project .body >.name{
+    width: 150px;
+    padding: 0 5px;
+}
+.add-project .body >.confirm{
+    width: 70px;
+}

@@ -1,0 +1,53 @@
+{
+  "title": "简介01",
+  "size": {
+    "width": 530,
+    "height": 390
+  },
+  "position": {
+    "top": 0,
+    "left": 0
+  },
+  "background": {
+    "color": "",
+    "image": "",
+    "fill": 0
+  },
+  "font": {
+    "color": "#64BCBD",
+    "size": 20,
+    "family": ""
+  },
+  "padding": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "option": [
+    {
+      "type": "color",
+      "key": "color",
+      "name": "底色",
+      "value": "#2F4554"
+    },
+    {
+      "type": "color",
+      "key": "border",
+      "name": "边线",
+      "value": "#376462"
+    },
+    {
+      "type": "text",
+      "key": "text",
+      "name": "文字",
+      "value": "妥协和迁就就是万恶之源。"
+    },
+    {
+      "type": "file",
+      "key": "file",
+      "name": "文件",
+      "value": ""
+    }
+  ]
+}

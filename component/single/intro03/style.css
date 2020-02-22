@@ -1,0 +1,17 @@
+.wrap {
+    height: 100%;
+    width: 100%;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding: 5px;
+}
+
+.wrap > .inner {
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding:10px;
+}

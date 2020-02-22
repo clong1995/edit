@@ -1,0 +1,26 @@
+.attention {
+    float: left;
+}
+
+.attention > .icon {
+    font-size: 13px;
+    float: left;
+    margin-right: 5px;
+}
+
+.author {
+    float: right;
+    cursor: pointer;
+}
+
+.author:hover {
+    text-decoration: underline #cccccc;
+}
+
+
+.author > .link > a:after {
+    content: attr(href);
+    font-size: 11px;
+    color: blue;
+}
+

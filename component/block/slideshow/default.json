@@ -1,0 +1,30 @@
+{
+  "title": "幻灯片",
+  "size": {
+    "width": 640,
+    "height": 360
+  },
+  "position": {
+    "top": 0,
+    "left": 0
+  },
+  "background": {
+    "color": "#000000",
+    "image": "xxxx.jpg"
+  },
+  "data": [
+    {
+      "type": "xxx",
+      "key": "xxx",
+      "name": "xxx",
+      "value": "xxxx"
+    },
+    {
+      "type": "xxx",
+      "key": "xxx",
+      "name": "xxx",
+      "value": "xxxx.png",
+      "constraint": "xxx"
+    }
+  ]
+}

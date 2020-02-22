@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta name="renderer" content="webkit"/>
+    <meta charset="UTF-8">
+    <title>IxD-工作区</title>
+    <link rel="stylesheet" href="/resource/style/public.css">
+    <script src="/resource/script/public.js"></script>
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+    <script src="/resource/lib/dom-to-image/dom-to-image.min.js"></script>
+    <script>if (window.module) module = window.module;</script>
+    <script src="/resource/lib/cooperation/Base.class.js"></script>
+    <script src="/resource/lib/cooperation/MD5.js"></script>
+</head>
+<body>
+<!-- 窗口 -->
+<module entry="window" scope="global"/>
+<!-- 提示组件 -->
+<module entry="dialog" scope="global"/>
+<!-- 上传组件 -->
+<module entry="upload" scope="global"/>
+<!-- 表格组件 -->
+<div class="data-editor hide">
+    <div class="container" style="top:100px;left:100px;">
+        <div class="drag-title">
+            数据编辑器
+            <div class="close">✖</div>
+        </div>
+        <div class="content">
+            <module entry="table" scope="global"/>
+        </div>
+    </div>
+</div>
+
+<module entry="back"/>
+<module entry="menu"/>
+<module entry="operation"/>
+<module entry="coverage"/>
+<module entry="canvas"/>
+<module entry="edit"/>
+<module entry="footer" scope="global"/>
+</body>
+</html>

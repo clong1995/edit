@@ -1,0 +1,282 @@
+.title {
+    width: 100%;
+    padding-right: 10px;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: var(--border);
+}
+
+.title > .tab {
+    float: left;
+    width: 80px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.title > .tab.active {
+    background: var(--background5);
+}
+
+.title > .select {
+    float: right;
+}
+
+.content {
+    width: 100%;
+    height: calc(100% - 25px);
+    padding: 5px;
+    background: var(--background);
+}
+
+.content > .item {
+    width: 100%;
+    height: 100%;
+}
+
+
+.content > .item > .info {
+    width: 100%;
+    height: 100%;
+}
+
+
+.content > .item > .hr {
+    height: 24px;
+    line-height: 24px;
+    font-size: 11px;
+    text-align: center;
+    color: var(--color);
+}
+
+
+.content > .item > .small-title {
+    height: 24px;
+    line-height: 24px;
+    font-size: 11px;
+    text-align: left;
+    color: var(--color);
+}
+
+.content > .item > .row {
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.content > .item > .row > .br {
+    width: 100%;
+    float: left;
+    height: 5px;
+}
+
+.content > .item > .row > .name {
+    float: left;
+    width: 40px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 11px;
+}
+
+.content > .item > .row > .value {
+    float: left;
+    width: 148px;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 0 0 5px;
+}
+
+
+.content > .item > .row > input[type="checkbox"] {
+    width: 13px !important;
+}
+
+/*名字样式*/
+.content > .item > .row.name > .value {
+
+}
+
+/*单行文字输入*/
+.content > .item > .row.text > .value {
+
+}
+
+
+/*多行文字输入*/
+.content > .item > .row.textarea > .value {
+    height: 100px;
+}
+
+/*数字*/
+.content > .item > .row.number > .value {
+
+}
+
+/*对齐*/
+.content > .item > .row.align > .value {
+
+}
+
+/*字体文字输入组件*/
+.content > .item > .row.font > input[type=number] {
+    width: 54px;
+    margin-right: 10px;
+}
+
+.content > .item > .row.font > input[type=color] {
+    width: 54px;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.content > .item > .row.font > select {
+    width: 85px;
+    padding: 0;
+}
+
+.content > .item > .row.font > input[type=text] {
+    width: 85px;
+}
+
+/*排版*/
+.content > .item > .row.compose > .value {
+    width: 54px;
+}
+
+.content > .item > .row.compose > .name:nth-child(3) {
+    text-align: right;
+    padding-right: 5px;
+}
+
+/*背景颜色样式*/
+.content > .item > .row.backgroundColor > input[type=text] {
+    width: 85px;
+}
+
+.content > .item > .row.backgroundColor > input[type=color] {
+    width: 40px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+/*颜色*/
+.content > .item > .row.color > input[type=text] {
+    width: 85px;
+}
+
+.content > .item > .row.color > input[type=color] {
+    width: 40px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+/*位置样式*/
+.content > .item > .row.position > .value {
+    width: 54px;
+}
+
+.content > .item > .row.position > .name:nth-child(3),
+.content > .item > .row.position > .name:nth-child(8) {
+    text-align: right;
+    padding-right: 5px;
+}
+
+/*页面大小*/
+.content > .item > .row.size > .value {
+    width: 54px;
+}
+
+.content > .item > .row.size > .name:nth-child(3) {
+    text-align: right;
+    padding-right: 5px;
+}
+
+/*文件样式*/
+.content > .item > .row.image > select {
+    width: 40px;
+    padding: 0;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.content > .item > .row.image > input[type=file] {
+    padding: 0;
+    width: 85px;
+}
+
+/*填充*/
+.content > .item > .row.flip-over > .value,
+.content > .item > .row.fill > .value {
+
+}
+
+/*封面*/
+.content > .item > .row.cover > .image {
+    height: 148px;
+    background-color: var(--background);
+    border: var(--border);
+    float: left;
+    font-size: 46px;
+    color: rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.content > .item > .row.cover > .image:hover {
+    color: #000;
+}
+
+/*备注*/
+.content > .item > .row.comment > .value {
+    height: 58px;
+    border: var(--border);
+    float: left;
+    resize: none;
+}
+
+.content > .item > .row.delete > .delete-btn {
+    color: red;
+}
+
+
+/*动态数据*/
+.real-data-window {
+    background: var(--background8);
+}
+
+.real-data-window > .window-container {
+    width: 500px;
+}
+
+.real-data-window .body {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.real-data-window .body > input {
+    width: 400px;
+}
+
+.real-data-window .body > select {
+    width: 232px;
+    margin-top: 10px;
+}
+
+.real-data-window .body > input[type="checkbox"] {
+    width: unset;
+}
+
+.real-data-window .body > textarea {
+    width: 400px;
+    height: 50px;
+    margin-top: 10px;
+    resize: vertical;
+}
+
+.real-data-window .body > .example,
+.real-data-window .body > .test-result {
+    height: 90px;
+}
+
+.real-data-window .body > .confirm {
+    width: 70px;
+}

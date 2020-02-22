@@ -1,0 +1,114 @@
+{
+  "title": "基础k线图",
+  "size": {
+    "width": 640,
+    "height": 360
+  },
+  "position": {
+    "top": 0,
+    "left": 0
+  },
+  "background": {
+    "color": "",
+    "image": "",
+    "fill": 0
+  },
+  "font": {
+    "color": "#000000",
+    "size": 24,
+    "family": ""
+  },
+  "padding": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "data": [
+    ["","衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"],
+    ["销量",5, 20, 36, 10, 10, 20]
+  ],
+  "option": [
+    {
+      "type": "echartsTitle",
+      "key": "echartsTitle",
+      "value": {
+        "show": true,
+        "text": "基础k线图",
+        "color": "",
+        "size": "",
+        "family": "",
+        "top": "",
+        "right": "",
+        "bottom": "",
+        "left": ""
+      }
+    },
+    {
+      "type": "echartsLegend",
+      "key": "echartsLegend",
+      "value": {
+        "show": true,
+        "color": "",
+        "size": "",
+        "family": "",
+        "top": "",
+        "right": "",
+        "bottom": "",
+        "left": "",
+        "type": "plain",
+        "orient": "horizontal"
+      }
+    },
+    {
+      "type": "echartsGrid",
+      "key": "echartsGrid",
+      "value": {
+        "show": true,
+        "color": ""
+      }
+    },
+    {
+      "type": "echartsAxis",
+      "key": "echartsAxis",
+      "value": {
+        "xAxisShow": true,
+        "yAxisShow": true,
+        "xAxisColor": "",
+        "xAxisSize": "",
+        "xAxisFamily": "",
+        "yAxisColor": "",
+        "yAxisSize": "",
+        "yAxisFamily": ""
+      }
+    },
+    {
+      "type": "echartsDataZoom",
+      "key": "echartsDataZoom",
+      "value": {
+        "xShow": true,
+        "yShow": true,
+        "color": "",
+        "backgroundColor": ""
+      }
+    },
+    {
+      "type": "echartsTooltip",
+      "key": "echartsTooltip",
+      "value": {
+        "show": true,
+        "size": "",
+        "family": "",
+        "color": "",
+        "backgroundColor": ""
+      }
+    },
+    {
+      "type": "echartsAxisPointer",
+      "key": "echartsAxisPointer",
+      "value": {
+        "show": true
+      }
+    }
+  ]
+}

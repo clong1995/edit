@@ -1,0 +1,115 @@
+.history {
+    width: 40px;
+    float: right;
+    text-align: center;
+    border-left: var(--border);
+}
+
+.history:after {
+    content: "撤销";
+    width: 25px;
+    left: 10px;
+}
+
+.oper-item {
+    width: 20px;
+    margin-left: 8px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.oper-item.package:after {
+    content: "打包下载";
+}
+
+.oper-item.develop:after {
+    content: "二次开发";
+}
+
+.oper-item.preview:after {
+    content: "预览";
+    width: 25px;
+}
+
+.oper-item.share:after {
+    content: "分享";
+    width: 25px;
+}
+
+.oper-item.publish:after {
+    content: "发布";
+    width: 25px;
+}
+
+/*分享*/
+.select-share > .window-container {
+    width: 300px;
+}
+
+.select-share .body {
+    width: 100%;
+}
+
+.select-share .body > .way {
+    padding-left: 10px;
+}
+
+.select-share .body > .way.image {
+    height: 40px;
+    line-height: 40px;
+}
+
+.select-share .body > .way.image > .btn {
+    padding: 0 5px;
+}
+
+.select-share .body > .way.link {
+    height: 60px;
+}
+
+.select-share .body > .way.link > .text {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 5px 23px 0 0;
+    float: right;
+    resize: none;
+    line-height: 16px;
+}
+
+.select-share .body > .way.code {
+    height: 40px;
+    line-height: 40px;
+}
+
+/*打包*/
+.select-package > .window-container {
+    width: 342px;
+    height: 130px;
+}
+
+.select-package .body {
+    width: 100%;
+}
+
+.select-package .body > .platform {
+    width: 100px;
+    height: 50px;
+    background: var(--background5);
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+
+.select-package .body > .platform:hover {
+    background: var(--background8);
+}
+
+.select-package .body > .platform > .iconfont {
+    font-size: 20px;
+    margin-right: 2px;
+}
